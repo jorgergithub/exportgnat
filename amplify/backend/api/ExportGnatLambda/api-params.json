@@ -1,0 +1,41 @@
+{
+    "paths": [
+        {
+            "name": "/gnatexport",
+            "lambdaFunction": "ExportGnatLambda",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ]
+            }
+        }
+    ],
+    "resourceName": "ExportGnatLambda",
+    "apiName": "ExportGnatLambda",
+    "functionArns": [
+        {
+            "lambdaFunction": "ExportGnatLambda"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 0,
+        "authRoleName": "amplify-awsgraphql-react-test-142808-authRole",
+        "unAuthRoleName": "amplify-awsgraphql-react-test-142808-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "ExportGnatLambda",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

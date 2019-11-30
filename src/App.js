@@ -2,13 +2,19 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import Amplify from 'aws-amplify';
+import awsconfig from './aws-exports';
+import { withAuthenticator } from 'aws-amplify-react'; // or 'aws-amplify-react-native';
+
+Amplify.configure(awsconfig);
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload HI JORGE!!.
+          Edit <code>src/App.js</code> and save to reload HI JORGE!! AGAIN.
         </p>
         <a
           className="App-link"
@@ -23,4 +29,5 @@ function App() {
   );
 }
 
-export default App;
+// export default App;
+export default withAuthenticator(App, true);

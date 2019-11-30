@@ -1,0 +1,20 @@
+{
+    "test": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-awsgraphql-react-test-142808-authRole",
+            "UnauthRoleArn": "arn:aws:iam::264814901481:role/amplify-awsgraphql-react-test-142808-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::264814901481:role/amplify-awsgraphql-react-test-142808-authRole",
+            "Region": "us-west-2",
+            "DeploymentBucketName": "amplify-awsgraphql-react-test-142808-deployment",
+            "UnauthRoleName": "amplify-awsgraphql-react-test-142808-unauthRole",
+            "StackName": "amplify-awsgraphql-react-test-142808",
+            "StackId": "arn:aws:cloudformation:us-west-2:264814901481:stack/amplify-awsgraphql-react-test-142808/262abc00-12ef-11ea-bfde-0a14cc4f5b48",
+            "AmplifyAppId": "do7qiw0n539gy"
+        },
+        "categories": {
+            "auth": {
+                "cognito71b877cb": {}
+            }
+        }
+    }
+}
