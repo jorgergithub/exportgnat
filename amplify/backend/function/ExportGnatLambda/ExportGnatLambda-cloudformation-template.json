@@ -63,7 +63,7 @@
 				"Timeout": "25",
 				"Code": {
 					"S3Bucket": "amplify-awsgraphql-react-test-142808-deployment",
-					"S3Key": "amplify-builds/ExportGnatLambda-555a647a383866646170-build.zip"
+					"S3Key": "amplify-builds/ExportGnatLambda-33564a45346d59576d6c-build.zip"
 				}
 			}
 		},
