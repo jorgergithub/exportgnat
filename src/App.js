@@ -11,9 +11,13 @@ Amplify.configure(awsconfig);
 function App() {
      async function handleClick(e) {
         e.preventDefault();
-        const path = "/items"; // you can specify the path
-        const apiResponse = await API.get("ExportGnatLambda", "/gnatexport"); //replace the API name
-        console.log('API response:' + apiResponse);
+        const apiResponse = await API.get("ExportGnatLambda", "/gnatexport").then(response => {
+                console.log('API response:' + response.success);
+            }).catch(error => {
+                console.log(error.response)
+            });
+
+
     }
 
     return (
