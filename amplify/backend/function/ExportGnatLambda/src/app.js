@@ -24,10 +24,10 @@ app.use(bodyParser.json())
 app.use(awsServerlessExpressMiddleware.eventContext())
 
 // Enable CORS for all methods
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*")
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
-  next()
+app.use(function (req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*")
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept")
+    next()
 });
 
 
@@ -40,9 +40,9 @@ app.get('/gnatexport', function(req, res) {
   res.json({success: 'get call get /gnatexport succeed!', url: req.url});
 });
 
-app.get('/gnatexport/*', function(req, res) {
-  // Add your code here
-  res.json({success: 'get call get /gnatexport/* succeed!', url: req.url});
+app.get('/gnatexport/*', function (req, res) {
+    // Add your code here
+    res.json({success: 'get call get /gnatexport/* succeed!', url: req.url});
 });
 
 // /****************************
@@ -87,7 +87,7 @@ app.get('/gnatexport/*', function(req, res) {
 //   res.json({success: 'delete call succeed!', url: req.url});
 // });
 
-app.listen(3000, function() {
+app.listen(3000, function () {
     console.log("App started")
 });
 

@@ -11,13 +11,11 @@ Amplify.configure(awsconfig);
 function App() {
      async function handleClick(e) {
         e.preventDefault();
-        const apiResponse = await API.get("ExportGnatLambda", "/gnatexport").then(response => {
+        await API.get("ExportGnatLambda", "/gnatexport").then(response => {
                 console.log('API response:' + response.success);
             }).catch(error => {
                 console.log(error.response)
             });
-
-
     }
 
     return (
