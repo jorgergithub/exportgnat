@@ -20,3 +20,9 @@
 .App-link {
   color: #09d3ac;
 }
+
+.App-button {
+  height: 300px;
+  width: 300px;
+  font-size: x-large;
+}

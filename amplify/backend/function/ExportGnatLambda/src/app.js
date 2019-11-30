@@ -37,55 +37,55 @@ app.use(function(req, res, next) {
 
 app.get('/gnatexport', function(req, res) {
   // Add your code here
-  res.json({success: 'get call succeed!', url: req.url});
+  res.json({success: 'get call get /gnatexport succeed!', url: req.url});
 });
 
 app.get('/gnatexport/*', function(req, res) {
   // Add your code here
-  res.json({success: 'get call succeed!', url: req.url});
+  res.json({success: 'get call get /gnatexport/* succeed!', url: req.url});
 });
 
-/****************************
-* Example post method *
-****************************/
-
-app.post('/gnatexport', function(req, res) {
-  // Add your code here
-  res.json({success: 'post call succeed!', url: req.url, body: req.body})
-});
-
-app.post('/gnatexport/*', function(req, res) {
-  // Add your code here
-  res.json({success: 'post call succeed!', url: req.url, body: req.body})
-});
-
-/****************************
-* Example put method *
-****************************/
-
-app.put('/gnatexport', function(req, res) {
-  // Add your code here
-  res.json({success: 'put call succeed!', url: req.url, body: req.body})
-});
-
-app.put('/gnatexport/*', function(req, res) {
-  // Add your code here
-  res.json({success: 'put call succeed!', url: req.url, body: req.body})
-});
-
-/****************************
-* Example delete method *
-****************************/
-
-app.delete('/gnatexport', function(req, res) {
-  // Add your code here
-  res.json({success: 'delete call succeed!', url: req.url});
-});
-
-app.delete('/gnatexport/*', function(req, res) {
-  // Add your code here
-  res.json({success: 'delete call succeed!', url: req.url});
-});
+// /****************************
+// * Example post method *
+// ****************************/
+//
+// app.post('/gnatexport', function(req, res) {
+//   // Add your code here
+//   res.json({success: 'post call succeed!', url: req.url, body: req.body})
+// });
+//
+// app.post('/gnatexport/*', function(req, res) {
+//   // Add your code here
+//   res.json({success: 'post call succeed!', url: req.url, body: req.body})
+// });
+//
+// /****************************
+// * Example put method *
+// ****************************/
+//
+// app.put('/gnatexport', function(req, res) {
+//   // Add your code here
+//   res.json({success: 'put call succeed!', url: req.url, body: req.body})
+// });
+//
+// app.put('/gnatexport/*', function(req, res) {
+//   // Add your code here
+//   res.json({success: 'put call succeed!', url: req.url, body: req.body})
+// });
+//
+// /****************************
+// * Example delete method *
+// ****************************/
+//
+// app.delete('/gnatexport', function(req, res) {
+//   // Add your code here
+//   res.json({success: 'delete call succeed!', url: req.url});
+// });
+//
+// app.delete('/gnatexport/*', function(req, res) {
+//   // Add your code here
+//   res.json({success: 'delete call succeed!', url: req.url});
+// });
 
 app.listen(3000, function() {
     console.log("App started")
