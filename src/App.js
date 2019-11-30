@@ -9,10 +9,10 @@ import {withAuthenticator} from 'aws-amplify-react'; // or 'aws-amplify-react-na
 Amplify.configure(awsconfig);
 
 function App() {
-     function handleClick(e) {
+     async function handleClick(e) {
         e.preventDefault();
         const path = "/items"; // you can specify the path
-        const apiResponse = API.get("ExportGnatLambda", "/gnatexport"); //replace the API name
+        const apiResponse = await API.get("ExportGnatLambda", "/gnatexport"); //replace the API name
         console.log('API response:' + apiResponse);
     }
 
